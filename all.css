@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+    scroll-behavior: auto;
+}
+
+body {
+    font-family: system-ui, Tahoma, Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    background: #ccc;
+    font-size: 1rem;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    margin: .5rem 0;
+}
+
+nav {
+    margin: .5rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+main {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 1rem;
+    min-height: 100%;
+    max-width: 960px;
+    background: #fff;
+}
+
+h1 {
+    margin: 3rem 0 0 0;
+    font-weight: normal;
+    font-size: 2.0em;
+}
+
+h2 {
+    margin: 3rem 0 1rem 0;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+pre {
+    font-family: inherit;
+    white-space: pre-line;
+}
+
+iframe {
+    margin-left: -1em;
+}
+
+.header {
+    margin: .5rem 0 0 0;
+}
+
+.logo {
+    position: absolute;
+    float: left;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    height: 7rem;
+    margin: 0 1rem 0 -1rem;
+    z-index: -1;
+}
+
+.timecodes {
+    margin: .5rem 0;
+}
+
+.timecodes span {
+    width: 3.6em; 
+    display: inline-block
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+	<link href="all.css" rel="stylesheet">
+	<title>Алексей Понамарев - Видео</title>
+	<meta name="description" content="Алексей Понамарев. Видео. Концерты.">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HKPE1YVV8J"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag () { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-HKPE1YVV8J');
+	</script>
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(89982344, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/89982344" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<script defer src="https://www.youtube.com/iframe_api"></script>
+	<script>
+		var player, video;
+
+		var videos = [
+			{
+				title: 'Концерт 2021',
+				videoId: 'RuaCKSgPkHo',
+				width: 1280,
+				height: 720,
+				timecodes: [
+					["0:12", "О Саратове (интервью)"],
+					["3:30", "Человек, вызывающий дождь"],
+					["7:35", "Горит мой день"],
+					["11:25", "Измеряя шагами"],
+					["14:31", "Зеркало души"],
+					["17:50", "Улыбнись"],
+					["21:50", "Судьба"],
+					["26:35", "Всё это мы"],
+					["32:28", "Мне бы слёзы твои"],
+					["37:00", "В лентах (кусочек)"],
+					["38:45", "Романтика"],
+					["42:00", "Но у корабля"],
+					["46:43", "Да здравствует дружба"],
+					["52:18", "Танцующие на краю пропасти"],
+					["56:35", "Добренькая"],
+					["1:01:10", "Общение с публикой"],
+					["1:06:30", "Мама, мы все сошли с ума (Цой)"],
+					["1:11:05", "Эта случайность - и есть Бог"],
+					["1:15:55", "Малыш"],
+					["1:19:25", "Когда я умру"],
+					["1:24:00", "Два крыла"],
+					["1:29:25", "Общение с публикой"],
+					["1:32:33", "Мы не ангелы, парень"],
+					["1:40:03", "Кто тогда ты?"],
+					["1:45:20", "Северная земля"],
+					["1:49:36", "Продолжение интервью"],
+				]
+			},
+			{
+				title: 'Концерт 2010',
+				videoId: 'EwwcJHWiPZ8',
+				width: 1193,
+				height: 873,
+				timecodes: [
+					["0:12", "Но у корабля"],
+					["4:32", "Да здараствует дружба"],
+					["9:00", "Два крыла"],
+					["13:38", "Измеряя шагами"],
+					["16:17", "Мы все еще есть"],
+					["19:58", "Посмотри ей в глаза"],
+					["23:17", "Силиконовая блять"],
+					["28:59", "Со мною рядом будешь"],
+					["32:28", "Дари сейчас"],
+					["36:11", "Романтика"],
+					["39:07", "Всадник в ночи"],
+					["44:45", "Это случайность и есть Бог"],
+					["47:17", "Я закрываю зеркало души"],
+					["50:28", "Бледная звезда"],
+					["53:10", "Эй народ"],
+					["56:21", "Любовь чистая"],
+					["59:01", "Мы не ангелы, парень"],
+					["1:05:09", "Все это мы"],
+					["1:07:25", "Человек, вызывающий дождь"],
+					["1:11:15", "Позвони мне"],
+					["1:13:28", "Споришь с дождем"],
+					["1:18:41", "Малыш"],
+					["1:22:12", "Добренькая"],
+					["1:26:19", "Силиконовая блять"],
+				]
+			},
+			{
+				title: 'Мы не ангелы',
+				videoId: 'L4_bjqFBKQ4',
+				width: 1280,
+				height: 720,
+			},
+			{
+				title: 'Всё это мы',
+				videoId: 'Oa3f-zb9UAk',
+				width: 1280,
+				height: 720,
+			},
+			{
+				title: 'Анна-Мария',
+				videoId: 'KgUgoGoLNyM',
+				width: 1280,
+				height: 720,
+			},
+			{
+				title: 'Aллилуйя',
+				videoId: 'OLFJKdbK1MA',
+				width: 1280,
+				height: 720,
+			},
+			{
+				title: 'Мы не ангелы. Фестиваль',
+				videoId: 'iXF9pl-elxw',
+				width: 1280,
+				height: 720,
+			},
+			{
+				title: 'Фестиваль Время колокольчиков',
+				videoId: 'p3HyIbFvmgE',
+				width: 1280,
+				height: 720,
+			},
+		];
+
+		function onYouTubeIframeAPIReady () {
+			player = new YT.Player('player', {
+				playerVars: {
+					rel: 0,
+					showinfo: 0,
+					origin: "https://alexey-ponamarev.alexnsk.keenetic.name"
+				},
+				width: document.getElementsByTagName('main')[0].offsetWidth,
+				events: {
+					'onReady': event => {
+						load(0);
+					}
+				}
+			});
+
+		}
+
+		function load (item) {
+			video = videos[item];
+			document.getElementById('title').innerHTML = video.title;
+
+			document.getElementById('timecodes').innerHTML = video.timecodes ?
+				video.timecodes.map(timecode => {
+					return `<div class="timecodes">
+						<span>${timecode[0]}</span>
+						<a href="#player" onclick="seekTo('${timecode[0]}')">${timecode[1]}</a>
+					</div>`;
+				}).join('') : '';
+
+			resize();
+			player.loadVideoById(video.videoId);
+		}
+
+		function resize () {
+			var main = document.getElementsByTagName('main')[0];
+			var width = main.offsetWidth;
+			var height = video.height * (width / video.width);
+			player.setSize(width, height);
+		}
+
+		function seekTo (time) {
+			var parts = time.split(':');
+
+			if (parts.length == 3) {
+				var sec = 3600 * parseInt(parts[0], 10) +
+					60 * parseInt(parts[1], 10) +
+					parseInt(parts[2], 10);
+			} else if (parts.length == 2) {
+				var sec = 60 * parseInt(parts[0], 10) +
+					parseInt(parts[1], 10);
+			}
+
+			player.seekTo(sec);
+			player.playVideo();
+		}
+
+		document.addEventListener("DOMContentLoaded", () => {
+			document.getElementById('index').innerHTML = videos.map((video, item) => {
+				return `<li><a onclick="load('${item}')">${video.title}</a><br></li>`;
+			}).join('');
+		});
+
+		window.onresize = resize;
+	</script>
+</head>
+
+<body>
+	<img class="logo" src="video.svg" alt="">
+
+	<main>
+		<header>
+			<h1 class="header">Алексей Понамарев</h1>
+			<nav>
+				<a href="/">Тексты</a>
+				<span href="">Видео</span>
+				<a href="/contacts.html">Контакты</a>
+			</nav>
+		</header>
+
+		<div>
+			<h1>Видео</h1>
+			<ol id="index" style="margin-bottom: 2rem;"></ol>
+			<div id="player"></div>
+			<h2 id="title" style="margin-top: 1rem;"></h2>
+			<div id="timecodes" style="margin-top: 1rem"></div>
+		</div>
+	</main>
+</body>
+
+</html>
